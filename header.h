@@ -1,3 +1,3 @@
 #include<stdio.h>
-void character_demo();
+void avg(int arr[]);
 

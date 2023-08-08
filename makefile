@@ -1,7 +1,7 @@
-ascii:app.o ascii.o
-	gcc app.o ascii.o -o ascii
+all:app.o avg.o
+avg:avg.o app.o
+	gcc avg.o app.o -o avg
+avg.o: avg.c
+	gcc -c avg.c
 app.o:app.c
 	gcc -c app.c
-ascii.o:ascii.c
-	gcc -c ascii.c
-
