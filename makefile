@@ -1,6 +1,6 @@
-add:app.o add.o
-	gcc app.o add.o -oadd
+asc:app.o asc.o
+	gcc app.o asc.o -o asc
 app.o:app.c
 	gcc -c app.c
-add.o:add.c
-	gcc -c add.c
+asc.o:asc.c
+	gcc -c asc.c	
