@@ -1,6 +1,7 @@
-asc:app.o asc.o
-	gcc app.o asc.o -o asc
+ascii:app.o ascii.o
+	gcc app.o ascii.o -o ascii
 app.o:app.c
 	gcc -c app.c
-asc.o:asc.c
-	gcc -c asc.c	
+ascii.o:ascii.c
+	gcc -c ascii.c
+
