@@ -1,2 +1,2 @@
 #include<stdio.h>
-void binary_demo();
+void demo_signed_unsigned();

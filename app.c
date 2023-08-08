@@ -1,24 +1,13 @@
 #include<stdio.h>
-void binary_demo()
+void demo_signed_unsigned()
 {
-	unsigned num;
-	unsigned bitmask;
-	unsigned result;
-	printf("Enter the number");
-	scanf("%u",&num);
-	int i=31;
-	while(i>=0)
-	{
-		bitmask = 1<<i;
-		result=num&bitmask;
-		if(result == 0)
-		
-			printf("0");
-		
-		else
-		
-			printf("1");
-			i--;
-		
-	}
+	unsigned int num=115;
+	unsigned int bitmask=1<<6;
+	unsigned int res;
+	res = num&bitmask;
+	if(res == 0)
+		printf("bit %d is off\n",res);
+	else
+		printf("bit %d is on\n",res);
 }
+

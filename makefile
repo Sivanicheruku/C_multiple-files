@@ -1,6 +1,6 @@
-bin:app.o bin.o
-	gcc app.o bin.o -o bin
+bit:app.o bit.o
+	gcc app.o bit.o -obit
 app.o:app.c
 	gcc -c app.c
-bin.o:bin.c
-	gcc -c bin.c
+bit.o:bit.c
+	gcc -c bit.c
