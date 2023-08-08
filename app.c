@@ -1,7 +1,24 @@
-#include"stdio.h"
-void main()
+#include<stdio.h>
+void binary_demo()
 {
-	int arr[5];
-	int i;
-	avg(arr);
+	unsigned num;
+	unsigned bitmask;
+	unsigned result;
+	printf("Enter the number");
+	scanf("%u",&num);
+	int i=31;
+	while(i>=0)
+	{
+		bitmask = 1<<i;
+		result=num&bitmask;
+		if(result == 0)
+		
+			printf("0");
+		
+		else
+		
+			printf("1");
+			i--;
+		
+	}
 }
